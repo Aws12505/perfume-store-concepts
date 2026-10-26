@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfume Store Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Readex+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #1c1612; --muted: #7d7166; --bg: #f6f1ea; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink); font-family: "Readex Pro", system-ui, sans-serif; display: grid; place-items: center; padding: 48px 16px; }
+    main { width: min(1100px, 100%); display: grid; gap: 40px; }
+    header { text-align: center; display: grid; gap: 10px; }
+    h1 { margin: 0; font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: clamp(34px, 5vw, 56px); }
+    header p { margin: 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card { display: grid; text-decoration: none; color: inherit; border-radius: 20px; overflow: hidden; background: #fff; box-shadow: 0 20px 40px -28px rgba(40, 20, 10, .45); transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+    .card:hover { transform: translateY(-6px); }
+    .card__cover { aspect-ratio: 16 / 10; background-size: cover; background-position: center; position: relative; }
+    .card__cover span { position: absolute; inset: auto 20px 18px; color: #fff; font-family: "Cormorant Garamond", serif; font-size: 40px; text-shadow: 0 2px 20px rgba(0,0,0,.4); }
+    .card__body { padding: 22px 24px 26px; display: grid; gap: 8px; }
+    .card__body b { font-weight: 500; font-size: 18px; }
+    .card__body p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+    .tags i { font-style: normal; font-size: 12px; background: var(--bg); padding: 3px 10px; border-radius: 999px; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; }
+    @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Perfume store concepts</h1>
+      <p>Two Shopify-style storefront mockups · Front-end only · Arabic (RTL) + English</p>
+    </header>
+    <div class="grid">
+      <a class="card" href="zahra/">
+        <div class="card__cover" style="background-image:url('https://images.unsplash.com/photo-1622618991746-fe6004db3a47?w=1200&q=80&auto=format&fit=crop')"><span>Zahra · زهرة</span></div>
+        <div class="card__body">
+          <b>Concept 1 — Warm &amp; promotional</b>
+          <p>Bright, offer-driven store: announcement bar, hero slider, countdown deal, best sellers with tabs, shop by scent notes, bundles, reviews.</p>
+          <div class="tags"><i>Countdown</i><i>1+2 offer</i><i>Scent notes</i><i>Cart drawer</i></div>
+        </div>
+      </a>
+      <a class="card" href="athar/">
+        <div class="card__cover" style="background-image:url('https://images.unsplash.com/photo-1535683577427-740aaac4ec25?w=1200&q=80&auto=format&fit=crop')"><span>Athar · أثر</span></div>
+        <div class="card__body">
+          <b>Concept 2 — Dark luxury</b>
+          <p>Cinematic boutique store: language gate, full-screen hero, product rail, collection tiles, gift set spotlight, brand story, journal.</p>
+          <div class="tags"><i>Language gate</i><i>Full-screen hero</i><i>Gift sets</i><i>Quick view</i></div>
+        </div>
+      </a>
+    </div>
+    <footer>Demo only — no backend, checkout disabled. Photos: Unsplash.</footer>
+  </main>
+</body>
+</html>

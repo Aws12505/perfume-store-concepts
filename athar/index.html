@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أثر | Athar Parfums</title>
+  <meta name="description" content="Athar Parfums — luxury Arabian perfumery. Demo storefront.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%230d0b09'/><text x='32' y='44' font-size='34' text-anchor='middle' fill='%23c8a96a' font-family='serif'>A</text></svg>">
+</head>
+<body class="is-top">
+
+<!-- Language gate (like many Gulf Shopify stores) -->
+<div class="gate" data-gate>
+  <div class="gate__box">
+    <div class="gate__logo"><span class="ar">أثـر</span><span class="en">ATHAR</span></div>
+    <p>اختر لغتك · Choose your language</p>
+    <div class="gate__options">
+      <button class="gate__opt is-active" data-gate-lang="ar">العربية</button>
+      <button class="gate__opt" data-gate-lang="en">English</button>
+    </div>
+    <button class="btn btn--gold btn--block" data-gate-enter>دخول · Enter</button>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="marquee-sm">
+    <span data-ar="شحن مجاني للطلبات فوق 300 د.إ · توصيل في نفس اليوم داخل الإمارات" data-en="Complimentary shipping over AED 300 · Same-day delivery across the UAE">شحن مجاني للطلبات فوق 300 د.إ · توصيل في نفس اليوم داخل الإمارات</span>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <div class="header__side">
+      <button class="icon-btn" data-open="menu" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h12M3 17h18"/></svg></button>
+      <nav class="nav">
+        <a href="#recommended" data-ar="المتجر" data-en="Shop">المتجر</a>
+        <a href="#collections" data-ar="المجموعات" data-en="Collections">المجموعات</a>
+        <a href="#gifts" data-ar="الهدايا" data-en="Gifts">الهدايا</a>
+        <a href="#craft" data-ar="قصتنا" data-en="Our story">قصتنا</a>
+      </nav>
+    </div>
+    <a href="#" class="logo" aria-label="Athar"><span class="ar">أثـر</span><span class="en">ATHAR</span></a>
+    <div class="header__side header__side--end">
+      <button class="icon-btn" data-open="search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn hide-sm" data-lang-toggle aria-label="Language"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg></button>
+      <button class="icon-btn hide-sm" aria-label="Account" data-toast-ar="تسجيل الدخول غير متاح في النسخة التجريبية" data-toast-en="Sign-in is disabled in this demo"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></button>
+      <button class="icon-btn cart-btn" data-open="cart" aria-label="Bag"><svg viewBox="0 0 24 24"><path d="M6 8h12l1 13H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" data-cart-count>0</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__slide is-active">
+      <img src="https://images.unsplash.com/photo-1535683577427-740aaac4ec25?w=2000&q=80&auto=format&fit=crop" alt="">
+      <div class="hero__caption">
+        <span class="eyebrow" data-ar="إصدار مرقّم" data-en="Numbered edition">إصدار مرقّم</span>
+        <h1 data-ar="العود الأسود" data-en="Black Oud">العود الأسود</h1>
+        <p data-ar="عود كمبودي معتّق عشرين عاماً — أندر ما في خزائننا." data-en="Cambodian oud aged for twenty years — the rarest in our vaults.">عود كمبودي معتّق عشرين عاماً — أندر ما في خزائننا.</p>
+        <a href="#" class="link-line" data-quick-open="black-oud" data-ar="اكتشف" data-en="Discover">اكتشف</a>
+      </div>
+    </div>
+    <div class="hero__slide">
+      <img src="https://images.unsplash.com/photo-1738414808975-201966230c59?w=2000&q=80&auto=format&fit=crop" alt="">
+      <div class="hero__caption">
+        <span class="eyebrow" data-ar="الزيوت العطرية" data-en="Perfume oils">الزيوت العطرية</span>
+        <h1 data-ar="ذكرى تُحفظ في قطرة" data-en="A memory in a single drop">ذكرى تُحفظ في قطرة</h1>
+        <p data-ar="زيوت مركّزة، معتّقة في خزائن أثر لسنوات حتى تنضج." data-en="Concentrated oils, aged in the Athar vaults for years until they mature.">زيوت مركّزة، معتّقة في خزائن أثر لسنوات حتى تنضج.</p>
+        <a href="#recommended" class="link-line" data-ar="تسوّق الآن" data-en="Shop now">تسوّق الآن</a>
+      </div>
+    </div>
+    <div class="hero__slide">
+      <img src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?w=2000&q=80&auto=format&fit=crop" alt="">
+      <div class="hero__caption">
+        <span class="eyebrow" data-ar="إصدار محدود" data-en="Limited edition">إصدار محدود</span>
+        <h1 data-ar="طقم الوادي" data-en="The Valley Set">طقم الوادي</h1>
+        <p data-ar="ثلاثة عطور تروي رحلة القوافل عبر الرمال الذهبية." data-en="Three perfumes that tell the journey of caravans across golden sands.">ثلاثة عطور تروي رحلة القوافل عبر الرمال الذهبية.</p>
+        <a href="#gifts" class="link-line" data-ar="اكتشف الطقم" data-en="Discover the set">اكتشف الطقم</a>
+      </div>
+    </div>
+    <div class="hero__ui">
+      <span class="hero__count" dir="ltr"><b data-hero-n>01</b> / 03</span>
+      <div class="hero__bars"><button class="is-active"><i></i></button><button><i></i></button><button><i></i></button></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true"><div class="marquee__track" data-marquee></div></div>
+
+  <!-- Intro -->
+  <section class="intro container reveal">
+    <span class="ornament">✦</span>
+    <p class="intro__quote" data-ar="لكلّ لحظةٍ عطر، ولكلّ عطرٍ أثرٌ يبقى." data-en="Every moment has a scent, and every scent leaves a trace.">لكلّ لحظةٍ عطر، ولكلّ عطرٍ أثرٌ يبقى.</p>
+    <p class="intro__sub" data-ar="أحضر الذكريات إلى المنزل، واحتفظ بها قريبة منك." data-en="Bring your memories home, and keep them close.">أحضر الذكريات إلى المنزل، واحتفظ بها قريبة منك.</p>
+  </section>
+
+  <!-- Recommended -->
+  <section class="section" id="recommended">
+    <div class="container section__head">
+      <h2 class="title" data-ar="مختارة لك" data-en="Recommended for you">مختارة لك</h2>
+      <div class="arrows">
+        <button class="arrow" data-scroll="-1" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button>
+        <button class="arrow" data-scroll="1" aria-label="Next"><svg viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="rail" data-rail></div>
+  </section>
+
+  <!-- Collections -->
+  <section class="section section--panel" id="collections">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="eyebrow" data-ar="المجموعات" data-en="Collections">المجموعات</span>
+        <h2 class="title" data-ar="عالم أثر" data-en="The world of Athar">عالم أثر</h2>
+      </div>
+      <div class="tiles" data-tiles></div>
+    </div>
+  </section>
+
+  <!-- Craft -->
+  <section class="section craft" id="craft">
+    <div class="container craft__grid">
+      <div class="craft__media reveal">
+        <img src="https://images.unsplash.com/photo-1605752995124-4a2580df5dff?w=1200&q=80&auto=format&fit=crop" alt="">
+      </div>
+      <div class="craft__body reveal">
+        <span class="eyebrow" data-ar="حرفة العطر" data-en="The craft">حرفة العطر</span>
+        <h2 class="title" data-ar="نُقطّر الحكايات قطرةً قطرة" data-en="We distil stories, drop by drop">نُقطّر الحكايات قطرةً قطرة</h2>
+        <p data-ar="منذ أكثر من أربعة عقود، نختار العود من غابات آسام وكمبوديا، والورد من مزارع الطائف، ونعتّق زيوتنا في براميل خشبية حتى تنضج. كل زجاجة من أثر تُعبّأ يدوياً في دبي." data-en="For over four decades we have sourced oud from the forests of Assam and Cambodia, roses from the farms of Taif, and aged our oils in wooden casks until they mature. Every bottle of Athar is hand-filled in Dubai.">منذ أكثر من أربعة عقود، نختار العود من غابات آسام وكمبوديا، والورد من مزارع الطائف، ونعتّق زيوتنا في براميل خشبية حتى تنضج. كل زجاجة من أثر تُعبّأ يدوياً في دبي.</p>
+        <div class="stats">
+          <div><b>40+</b><span data-ar="عاماً من الخبرة" data-en="years of mastery">عاماً من الخبرة</span></div>
+          <div><b>12</b><span data-ar="مصدراً للعود" data-en="oud origins">مصدراً للعود</span></div>
+          <div><b>100%</b><span data-ar="زيوت طبيعية" data-en="natural oils">زيوت طبيعية</span></div>
+        </div>
+        <a href="#" class="link-line" data-toast-ar="هذه نسخة تجريبية للواجهة فقط" data-toast-en="This is a front-end demo only" data-ar="اقرأ قصتنا" data-en="Read our story">اقرأ قصتنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gift spotlight -->
+  <section class="spotlight" id="gifts">
+    <div class="container spotlight__grid">
+      <div class="spotlight__shot reveal" data-spot-shot></div>
+      <div class="spotlight__body reveal">
+        <span class="eyebrow" data-ar="أطقم العطور · إصدار محدود" data-en="Perfume sets · Limited edition">أطقم العطور · إصدار محدود</span>
+        <h2 class="title" data-ar="طقم الوادي" data-en="The Valley Set">طقم الوادي</h2>
+        <p data-ar="وادي الرمال، ليالي قرطبة، وإرث — ثلاثة عطور 100 مل في صندوق خشبي مبطّن بالمخمل، مع بطاقة إهداء مكتوبة بخط اليد." data-en="Sand Valley, Cordoba Nights and Legacy — three 100ml perfumes in a velvet-lined wooden case, with a hand-written gift card.">وادي الرمال، ليالي قرطبة، وإرث — ثلاثة عطور 100 مل في صندوق خشبي مبطّن بالمخمل، مع بطاقة إهداء مكتوبة بخط اليد.</p>
+        <div class="spotlight__price" data-spot-price></div>
+        <div class="spotlight__actions">
+          <button class="btn btn--gold" data-add="valley-set" data-ar="أضف إلى الحقيبة" data-en="Add to bag">أضف إلى الحقيبة</button>
+          <button class="btn btn--ghost" data-quick-open="valley-set" data-ar="التفاصيل" data-en="Details">التفاصيل</button>
+        </div>
+        <p class="muted" data-ar="متبقٍ 37 طقماً فقط" data-en="Only 37 sets remaining">متبقٍ 37 طقماً فقط</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax quote -->
+  <section class="parallax">
+    <div class="parallax__bg" style="background-image:url('https://images.unsplash.com/photo-1549944850-84e00be4203b?w=2000&q=80&auto=format&fit=crop')"></div>
+    <div class="parallax__content reveal">
+      <p data-ar="«رائحةٌ تسافر بك عبر الزمن، حيث تبقى المشاعر حيّة.»" data-en="“A scent that carries you through time, where feelings stay alive.”">«رائحةٌ تسافر بك عبر الزمن، حيث تبقى المشاعر حيّة.»</p>
+      <a href="#recommended" class="btn btn--light" data-ar="تسوّق الآن" data-en="Shop now">تسوّق الآن</a>
+    </div>
+  </section>
+
+  <!-- Journal -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="title" data-ar="من دفتر أثر" data-en="The Athar journal">من دفتر أثر</h2>
+        <a href="#" class="link-line" data-toast-ar="هذه نسخة تجريبية للواجهة فقط" data-toast-en="This is a front-end demo only" data-ar="كل القصص" data-en="All stories">كل القصص</a>
+      </div>
+      <div class="journal">
+        <article class="story reveal">
+          <div class="story__img"><img src="https://images.unsplash.com/photo-1738414808975-201966230c59?w=900&q=80&auto=format&fit=crop" alt=""></div>
+          <span class="story__meta" data-ar="دليل · 4 دقائق" data-en="Guide · 4 min">دليل · 4 دقائق</span>
+          <h3 data-ar="كيف تختار دهن العود المناسب لك" data-en="How to choose the right oud oil">كيف تختار دهن العود المناسب لك</h3>
+        </article>
+        <article class="story reveal">
+          <div class="story__img"><img src="https://images.unsplash.com/photo-1640869116016-93c00ba94b28?w=900&q=80&auto=format&fit=crop" alt=""></div>
+          <span class="story__meta" data-ar="طقوس · 3 دقائق" data-en="Rituals · 3 min">طقوس · 3 دقائق</span>
+          <h3 data-ar="فن طبقات العطر: المسك أولاً ثم العود" data-en="The art of layering: musk first, then oud">فن طبقات العطر: المسك أولاً ثم العود</h3>
+        </article>
+        <article class="story reveal">
+          <div class="story__img"><img src="https://images.unsplash.com/photo-1489493585363-d69421e0edd3?w=900&q=80&auto=format&fit=crop" alt=""></div>
+          <span class="story__meta" data-ar="حكايات · 6 دقائق" data-en="Stories · 6 min">حكايات · 6 دقائق</span>
+          <h3 data-ar="على درب القوافل: رحلة اللبان من ظفار" data-en="On the caravan trail: frankincense from Dhofar">على درب القوافل: رحلة اللبان من ظفار</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services container">
+    <div><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><b data-ar="توصيل في نفس اليوم" data-en="Same-day delivery">توصيل في نفس اليوم</b></div>
+    <div><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1"/></svg><b data-ar="تغليف فاخر مجاني" data-en="Complimentary gift wrap">تغليف فاخر مجاني</b></div>
+    <div><svg viewBox="0 0 24 24"><path d="M7 3h10v4a5 5 0 0 1-10 0zM12 12v5M8 21h8"/></svg><b data-ar="عيّنتان مجاناً مع كل طلب" data-en="Two free samples per order">عيّنتان مجاناً مع كل طلب</b></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><b data-ar="دفع آمن ومقسّط" data-en="Secure & split payments">دفع آمن ومقسّط</b></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__news">
+      <div>
+        <h3 data-ar="انضم إلى دائرة أثر" data-en="Join the Athar circle">انضم إلى دائرة أثر</h3>
+        <p data-ar="كن أول من يعرف عن الإصدارات المحدودة والأمسيات الخاصة." data-en="Be first to know about limited releases and private evenings.">كن أول من يعرف عن الإصدارات المحدودة والأمسيات الخاصة.</p>
+      </div>
+      <form class="news-form" data-fake-form>
+        <input type="email" required placeholder="email@example.com" aria-label="Email">
+        <button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+      </form>
+    </div>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo"><span class="ar">أثـر</span><span class="en">ATHAR</span></a>
+        <p data-ar="دار عطور عربية فاخرة · دبي، الإمارات العربية المتحدة" data-en="Luxury Arabian perfume house · Dubai, United Arab Emirates">دار عطور عربية فاخرة · دبي، الإمارات العربية المتحدة</p>
+      </div>
+      <div><h4 data-ar="المتجر" data-en="Shop">المتجر</h4><a href="#recommended" data-ar="العطور" data-en="Perfumes">العطور</a><a href="#gifts" data-ar="أطقم العطور" data-en="Perfume sets">أطقم العطور</a><a href="#collections" data-ar="الشعر والجسم" data-en="Hair & body">الشعر والجسم</a><a href="#collections" data-ar="معطرات المنزل" data-en="Home fragrance">معطرات المنزل</a></div>
+      <div><h4 data-ar="المساعدة" data-en="Help">المساعدة</h4><a href="#" data-ar="تتبع طلبك" data-en="Track your order">تتبع طلبك</a><a href="#" data-ar="الشحن" data-en="Shipping">الشحن</a><a href="#" data-ar="الاسترجاع" data-en="Returns">الاسترجاع</a><a href="#" data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</a></div>
+      <div><h4 data-ar="أثر" data-en="Athar">أثر</h4><a href="#craft" data-ar="قصتنا" data-en="Our story">قصتنا</a><a href="#" data-ar="بوتيكاتنا" data-en="Boutiques">بوتيكاتنا</a><a href="#" data-ar="الشركات والهدايا" data-en="Corporate gifting">الشركات والهدايا</a><a href="#" data-ar="الخصوصية" data-en="Privacy">الخصوصية</a></div>
+    </div>
+    <div class="footer__bottom">
+      <small>© 2026 Athar Parfums · <span data-ar="مدعوم من Shopify" data-en="Powered by Shopify">مدعوم من Shopify</span></small>
+      <div class="payments"><span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>tabby</span><span>tamara</span></div>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" data-overlay></div>
+
+<aside class="drawer drawer--menu" data-drawer="menu">
+  <div class="drawer__head">
+    <a href="#" class="logo"><span class="ar">أثـر</span><span class="en">ATHAR</span></a>
+    <button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav class="drawer__nav">
+    <a href="#recommended" data-ar="العطور" data-en="Perfumes">العطور</a>
+    <a href="#collections" data-ar="المجموعات" data-en="Collections">المجموعات</a>
+    <a href="#gifts" data-ar="أطقم العطور" data-en="Perfume sets">أطقم العطور</a>
+    <a href="#collections" data-ar="الشعر والجسم" data-en="Hair & body">الشعر والجسم</a>
+    <a href="#collections" data-ar="معطرات المنزل" data-en="Home fragrance">معطرات المنزل</a>
+    <a href="#craft" data-ar="قصتنا" data-en="Our story">قصتنا</a>
+  </nav>
+  <button class="btn btn--ghost btn--block" data-lang-toggle><span data-ar="English" data-en="العربية">English</span></button>
+</aside>
+
+<aside class="drawer drawer--cart" data-drawer="cart">
+  <div class="drawer__head">
+    <h3><span data-ar="حقيبتك" data-en="Your bag">حقيبتك</span> <small>(<span data-cart-count>0</span>)</small></h3>
+    <button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="ship-bar"><p data-ship-text></p><div class="ship-bar__track"><span data-ship-fill></span></div></div>
+  <div class="cart-items" data-cart-items></div>
+  <div class="cart-foot">
+    <label class="gift-note"><input type="checkbox" checked> <span data-ar="أضف تغليف هدية وبطاقة إهداء (مجاناً)" data-en="Add gift wrapping & a message card (free)">أضف تغليف هدية وبطاقة إهداء (مجاناً)</span></label>
+    <div class="cart-foot__row"><span data-ar="المجموع الفرعي" data-en="Subtotal">المجموع الفرعي</span><b data-cart-total>0</b></div>
+    <p class="muted" data-ar="شامل الضريبة. يتم احتساب الشحن عند الدفع." data-en="Taxes included. Shipping calculated at checkout.">شامل الضريبة. يتم احتساب الشحن عند الدفع.</p>
+    <button class="btn btn--gold btn--block" data-checkout data-ar="إتمام الشراء" data-en="Checkout">إتمام الشراء</button>
+  </div>
+</aside>
+
+<div class="search" data-drawer="search">
+  <div class="container search__inner">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input type="search" data-search-input data-ph-ar="ابحث في أثر..." data-ph-en="Search Athar..." placeholder="ابحث في أثر...">
+    <button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="container search__results" data-search-results></div>
+</div>
+
+<div class="modal" data-drawer="quick" role="dialog" aria-modal="true"><div class="modal__box" data-quick></div></div>
+<div class="toast" data-toast></div>
+
+<script src="bottle.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

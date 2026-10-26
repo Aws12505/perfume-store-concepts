@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>زهرة للعطور | Zahra Perfumes</title>
+  <meta name="description" content="Zahra Perfumes — modern Arabian fragrances. Demo storefront.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23ef6f45'/><text x='32' y='43' font-size='32' text-anchor='middle' fill='white' font-family='serif'>Z</text></svg>">
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">
+  <div class="container announce__inner">
+    <div class="announce__links">
+      <a href="#" class="announce__link"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z M4 7l8 6 8-6"/></svg> hello@zahra.ae</a>
+      <a href="#" class="announce__link"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg> <span dir="ltr">+971 4 000 0000</span></a>
+    </div>
+    <div class="announce__rotator" aria-live="polite">
+      <p class="is-active" data-ar="🚚 شحن مجاني للطلبات فوق 349 د.إ — توصيل خلال 6 ساعات في دبي" data-en="🚚 Free shipping on orders over AED 349 — 6-hour delivery in Dubai">🚚 شحن مجاني للطلبات فوق 349 د.إ — توصيل خلال 6 ساعات في دبي</p>
+      <p data-ar="🎁 اشترِ عطراً واحصل على اثنين مجاناً — لفترة محدودة" data-en="🎁 Buy 1 perfume, get 2 free — limited time">🎁 اشترِ عطراً واحصل على اثنين مجاناً — لفترة محدودة</p>
+      <p data-ar="💳 قسّمها على 4 دفعات بدون فوائد مع تابي وتمارا" data-en="💳 Split into 4 interest-free payments with Tabby & Tamara">💳 قسّمها على 4 دفعات بدون فوائد مع تابي وتمارا</p>
+    </div>
+    <div class="announce__tools">
+      <button class="lang-toggle" type="button" data-lang-toggle><span data-ar="English" data-en="العربية">English</span></button>
+      <span class="announce__sep"></span>
+      <span class="announce__country">🇦🇪 <span data-ar="الإمارات" data-en="UAE">الإمارات</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <button class="icon-btn header__burger" type="button" aria-label="Menu" data-open="menu">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h12"/></svg>
+    </button>
+
+    <a href="#" class="logo" aria-label="Zahra">
+      <span class="logo__ar">زهـرة</span>
+      <span class="logo__en">Zahra</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="#bestsellers" data-ar="الأكثر مبيعاً" data-en="Best sellers">الأكثر مبيعاً</a>
+      <a href="#bestsellers" data-ar="عطور نسائية" data-en="Women">عطور نسائية</a>
+      <a href="#bestsellers" data-ar="عطور رجالية" data-en="Men">عطور رجالية</a>
+      <a href="#bundles" data-ar="الباقات" data-en="Bundles">الباقات</a>
+      <a href="#notes" data-ar="النوتات العطرية" data-en="Scent notes">النوتات العطرية</a>
+      <a href="#bundles" class="nav__sale" data-ar="العروض" data-en="Offers">العروض</a>
+    </nav>
+
+    <div class="header__icons">
+      <button class="icon-btn" type="button" aria-label="Search" data-open="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn hide-sm" type="button" aria-label="Account" data-toast-ar="تسجيل الدخول غير متاح في النسخة التجريبية" data-toast-en="Login is disabled in this demo">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      </button>
+      <button class="icon-btn hide-sm" type="button" aria-label="Wishlist" data-toast-ar="قائمة الأمنيات فارغة" data-toast-en="Your wishlist is empty">
+        <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" type="button" aria-label="Cart" data-open="cart">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" data-cart-count>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero slider -->
+  <section class="hero" aria-roledescription="carousel">
+    <div class="hero__track">
+      <article class="hero__slide is-active">
+        <img src="https://images.unsplash.com/photo-1622618991746-fe6004db3a47?w=1920&q=80&auto=format&fit=crop" alt="">
+        <div class="hero__shade"></div>
+        <div class="container hero__content">
+          <span class="hero__kicker" data-ar="عرض لفترة محدودة" data-en="Limited time offer">عرض لفترة محدودة</span>
+          <h1 class="hero__title"><span data-ar="اشترِ 1" data-en="Buy 1">اشترِ 1</span><br><em data-ar="+2 مجاناً" data-en="+2 free">+2 مجاناً</em></h1>
+          <p class="hero__text" data-ar="اختر عطرك المفضّل وأضف عطرين من اختيارك هدية منّا." data-en="Choose your favourite scent and add any two more — on us.">اختر عطرك المفضّل وأضف عطرين من اختيارك هدية منّا.</p>
+          <a href="#bestsellers" class="btn btn--light" data-ar="تسوّق الآن" data-en="Shop now">تسوّق الآن</a>
+        </div>
+      </article>
+      <article class="hero__slide">
+        <img src="https://images.unsplash.com/photo-1598121496628-9d8b7578e290?w=1920&q=80&auto=format&fit=crop" alt="">
+        <div class="hero__shade"></div>
+        <div class="container hero__content">
+          <span class="hero__kicker" data-ar="مجموعة الربيع" data-en="Spring collection">مجموعة الربيع</span>
+          <h1 class="hero__title"><span data-ar="زهور" data-en="Blooms of">زهور</span><br><em data-ar="الحديقة السرّية" data-en="the secret garden">الحديقة السرّية</em></h1>
+          <p class="hero__text" data-ar="ورد طائفي، ياسمين وفاوانيا — عطور خفيفة تدوم طوال اليوم." data-en="Taif rose, jasmine and peony — light scents that last all day.">ورد طائفي، ياسمين وفاوانيا — عطور خفيفة تدوم طوال اليوم.</p>
+          <a href="#notes" class="btn btn--light" data-ar="اكتشف المجموعة" data-en="Discover">اكتشف المجموعة</a>
+        </div>
+      </article>
+      <article class="hero__slide">
+        <img src="https://images.unsplash.com/photo-1705899844877-81bb0a0665c1?w=1920&q=80&auto=format&fit=crop" alt="">
+        <div class="hero__shade"></div>
+        <div class="container hero__content">
+          <span class="hero__kicker" data-ar="هدايا" data-en="Gifting">هدايا</span>
+          <h1 class="hero__title"><span data-ar="هدية تُذكر" data-en="A gift">هدية تُذكر</span><br><em data-ar="لكل مناسبة" data-en="they'll remember">لكل مناسبة</em></h1>
+          <p class="hero__text" data-ar="صناديق هدايا مغلّفة يدوياً مع بطاقة إهداء مجانية." data-en="Hand-wrapped gift boxes with a free message card.">صناديق هدايا مغلّفة يدوياً مع بطاقة إهداء مجانية.</p>
+          <a href="#bundles" class="btn btn--light" data-ar="تسوّق الهدايا" data-en="Shop gifts">تسوّق الهدايا</a>
+        </div>
+      </article>
+    </div>
+    <button class="hero__arrow hero__arrow--prev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button>
+    <button class="hero__arrow hero__arrow--next" type="button" aria-label="Next"><svg viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg></button>
+    <div class="hero__dots"></div>
+  </section>
+
+  <!-- Countdown deal -->
+  <section class="container">
+    <div class="deal reveal">
+      <div class="deal__text">
+        <span class="deal__badge" data-ar="ينتهي قريباً" data-en="Ending soon">ينتهي قريباً</span>
+        <h2 data-ar="باقات زهرة — خصم حتى 45%" data-en="Zahra bundles — up to 45% off">باقات زهرة — خصم حتى 45%</h2>
+        <a href="#bundles" class="btn btn--white" data-ar="تسوّق الآن" data-en="Shop now">تسوّق الآن</a>
+      </div>
+      <div class="countdown" data-countdown>
+        <div><b data-cd="d">01</b><span data-ar="يوم" data-en="Days">يوم</span></div>
+        <div><b data-cd="h">10</b><span data-ar="ساعة" data-en="Hours">ساعة</span></div>
+        <div><b data-cd="m">32</b><span data-ar="دقيقة" data-en="Mins">دقيقة</span></div>
+        <div><b data-cd="s">22</b><span data-ar="ثانية" data-en="Secs">ثانية</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best sellers -->
+  <section class="section" id="bestsellers">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title" data-ar="الأكثر مبيعاً" data-en="Best sellers">الأكثر مبيعاً</h2>
+          <p class="hot-line">⚡ <span data-ar="الأكثر طلباً... تم بيع" data-en="Trending... sold">الأكثر طلباً... تم بيع</span> <b data-sold>14,624</b> <span data-ar="حبة خلال 30 دقيقة" data-en="bottles in the last 30 minutes">حبة خلال 30 دقيقة</span></p>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" data-filter="best" data-ar="الأكثر مبيعاً" data-en="Best sellers">الأكثر مبيعاً</button>
+          <button class="tab" data-filter="new" data-ar="وصل حديثاً" data-en="New in">وصل حديثاً</button>
+          <button class="tab" data-filter="women" data-ar="نسائي" data-en="Women">نسائي</button>
+          <button class="tab" data-filter="men" data-ar="رجالي" data-en="Men">رجالي</button>
+        </div>
+      </div>
+      <div class="grid products" data-grid="main"></div>
+      <div class="center"><a href="#" class="btn btn--outline" data-toast-ar="هذه نسخة تجريبية للواجهة فقط" data-toast-en="This is a front-end demo only" data-ar="مشاهدة الكل" data-en="View all">مشاهدة الكل</a></div>
+    </div>
+  </section>
+
+  <!-- Shop by notes -->
+  <section class="notes" id="notes">
+    <div class="container">
+      <h2 class="section__title center-text" data-ar="تسوّق حسب النوتات العطرية" data-en="Shop by scent notes">تسوّق حسب النوتات العطرية</h2>
+      <div class="notes__row" data-notes></div>
+    </div>
+  </section>
+
+  <!-- Promo split -->
+  <section class="section">
+    <div class="container promo reveal">
+      <div class="promo__media">
+        <div class="shot" data-promo-shot></div>
+        <span class="promo__sticker"><b>1+2</b><small data-ar="مجاناً" data-en="FREE">مجاناً</small></span>
+      </div>
+      <div class="promo__body">
+        <span class="eyebrow" data-ar="عرض الأسبوع" data-en="Offer of the week">عرض الأسبوع</span>
+        <h2 data-ar="اشترِ عطراً واحداً واحصل على عطرين مجاناً" data-en="Buy one perfume, get two free">اشترِ عطراً واحداً واحصل على عطرين مجاناً</h2>
+        <p data-ar="أضف أي ثلاثة عطور 50 مل إلى سلتك وسيتم خصم أقل اثنين تلقائياً عند الدفع. العرض ساري على جميع عطور المجموعة الأساسية." data-en="Add any three 50ml perfumes to your cart and the two lowest-priced are free at checkout. Valid on the entire core collection.">أضف أي ثلاثة عطور 50 مل إلى سلتك وسيتم خصم أقل اثنين تلقائياً عند الدفع. العرض ساري على جميع عطور المجموعة الأساسية.</p>
+        <ul class="ticks">
+          <li data-ar="عطور تدوم أكثر من 12 ساعة" data-en="Lasts over 12 hours">عطور تدوم أكثر من 12 ساعة</li>
+          <li data-ar="زيوت عطرية فرنسية فاخرة" data-en="Premium French perfume oils">زيوت عطرية فرنسية فاخرة</li>
+          <li data-ar="تغليف هدايا مجاني" data-en="Free gift wrapping">تغليف هدايا مجاني</li>
+        </ul>
+        <a href="#bestsellers" class="btn" data-ar="ابدأ الاختيار" data-en="Start choosing">ابدأ الاختيار</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bundles -->
+  <section class="section section--tint" id="bundles">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title" data-ar="باقات زهرة" data-en="Zahra bundles">باقات زهرة</h2>
+        <a href="#" class="link-more" data-toast-ar="هذه نسخة تجريبية للواجهة فقط" data-toast-en="This is a front-end demo only" data-ar="مشاهدة المزيد" data-en="View more">مشاهدة المزيد</a>
+      </div>
+      <div class="grid products" data-grid="bundle"></div>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title" data-ar="مجموعات زهرة" data-en="Zahra collections">مجموعات زهرة</h2>
+      </div>
+      <div class="collections">
+        <a href="#bestsellers" class="coll coll--tall reveal">
+          <img src="https://images.unsplash.com/photo-1535683577427-740aaac4ec25?w=900&q=80&auto=format&fit=crop" alt="">
+          <span class="coll__label"><b data-ar="مجموعة العود" data-en="The Oud collection">مجموعة العود</b><small data-ar="12 منتج" data-en="12 products">12 منتج</small></span>
+        </a>
+        <a href="#bestsellers" class="coll reveal">
+          <img src="https://images.unsplash.com/photo-1705899853374-d91c048b81d2?w=900&q=80&auto=format&fit=crop" alt="">
+          <span class="coll__label"><b data-ar="المسك الأبيض" data-en="White musk">المسك الأبيض</b><small data-ar="8 منتجات" data-en="8 products">8 منتجات</small></span>
+        </a>
+        <a href="#bestsellers" class="coll reveal">
+          <img src="https://images.unsplash.com/photo-1650686037139-f6a8afec44fc?w=900&q=80&auto=format&fit=crop" alt="">
+          <span class="coll__label"><b data-ar="معطرات الشعر" data-en="Hair mists">معطرات الشعر</b><small data-ar="6 منتجات" data-en="6 products">6 منتجات</small></span>
+        </a>
+        <a href="#bundles" class="coll coll--wide reveal">
+          <img src="https://images.unsplash.com/photo-1615108395437-df128ad79e80?w=1400&q=80&auto=format&fit=crop" alt="">
+          <span class="coll__label"><b data-ar="أطقم الهدايا" data-en="Gift sets">أطقم الهدايا</b><small data-ar="10 منتجات" data-en="10 products">10 منتجات</small></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <h2 class="section__title" data-ar="ماذا يقول عملاؤنا" data-en="What our customers say">ماذا يقول عملاؤنا</h2>
+          <p class="rating-line"><span class="stars">★★★★★</span> <b>4.9/5</b> <span data-ar="من أكثر من 18,000 تقييم" data-en="from 18,000+ reviews">من أكثر من 18,000 تقييم</span></p>
+        </div>
+      </div>
+      <div class="reviews" data-reviews></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features container">
+    <div class="feature"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><b data-ar="توصيل سريع" data-en="Fast delivery">توصيل سريع</b><span data-ar="خلال 6 ساعات" data-en="Within 6 hours">خلال 6 ساعات</span></div>
+    <div class="feature"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><b data-ar="دفع آمن" data-en="Secure payment">دفع آمن</b><span data-ar="Apple Pay، بطاقات، تابي" data-en="Apple Pay, cards, Tabby">Apple Pay، بطاقات، تابي</span></div>
+    <div class="feature"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v5h5"/></svg><b data-ar="استرجاع سهل" data-en="Easy returns">استرجاع سهل</b><span data-ar="خلال 14 يوماً" data-en="Within 14 days">خلال 14 يوماً</span></div>
+    <div class="feature"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1"/></svg><b data-ar="تغليف هدايا" data-en="Gift wrapping">تغليف هدايا</b><span data-ar="مجاناً مع كل طلب" data-en="Free on every order">مجاناً مع كل طلب</span></div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="container">
+    <div class="newsletter reveal">
+      <div>
+        <h2 data-ar="احصل على خصم 15% على طلبك الأول" data-en="Get 15% off your first order">احصل على خصم 15% على طلبك الأول</h2>
+        <p data-ar="اشترك في نشرتنا لتصلك العروض الحصرية والإصدارات الجديدة أولاً." data-en="Subscribe for exclusive offers and early access to new launches.">اشترك في نشرتنا لتصلك العروض الحصرية والإصدارات الجديدة أولاً.</p>
+      </div>
+      <form class="newsletter__form" data-fake-form>
+        <input type="email" required placeholder="email@example.com" aria-label="Email">
+        <button class="btn" type="submit" data-ar="اشترك" data-en="Subscribe">اشترك</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#" class="logo logo--light"><span class="logo__ar">زهـرة</span><span class="logo__en">Zahra</span></a>
+      <p data-ar="عطور عربية بروح عصرية، مصنوعة في دبي من أجود الزيوت العطرية." data-en="Arabian perfumes with a modern soul, crafted in Dubai from the finest oils.">عطور عربية بروح عصرية، مصنوعة في دبي من أجود الزيوت العطرية.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11a3.5 3.5 0 1 1-3-3.4M14 3c.5 2.6 2.3 4.4 5 4.6"/></svg></a>
+        <a href="#" aria-label="Snapchat"><svg viewBox="0 0 24 24"><path d="M12 3c3 0 5 2.2 5 5v3l2 1-2 1c-.5 2 1.5 3 3 3.5-1 1-2.5.5-3.5 1.5S14 21 12 21s-3.5-2-4.5-3-2.5-.5-3.5-1.5c1.5-.5 3.5-1.5 3-3.5l-2-1 2-1V8c0-2.8 2-5 5-5z"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4 data-ar="تسوّق" data-en="Shop">تسوّق</h4>
+      <a href="#bestsellers" data-ar="الأكثر مبيعاً" data-en="Best sellers">الأكثر مبيعاً</a>
+      <a href="#bundles" data-ar="الباقات" data-en="Bundles">الباقات</a>
+      <a href="#notes" data-ar="النوتات العطرية" data-en="Scent notes">النوتات العطرية</a>
+      <a href="#bundles" data-ar="بطاقات الهدايا" data-en="Gift cards">بطاقات الهدايا</a>
+    </div>
+    <div>
+      <h4 data-ar="خدمة العملاء" data-en="Customer care">خدمة العملاء</h4>
+      <a href="#" data-ar="تتبّع الطلب" data-en="Track order">تتبّع الطلب</a>
+      <a href="#" data-ar="الشحن والتوصيل" data-en="Shipping">الشحن والتوصيل</a>
+      <a href="#" data-ar="الاسترجاع والاستبدال" data-en="Returns & exchanges">الاسترجاع والاستبدال</a>
+      <a href="#" data-ar="الأسئلة الشائعة" data-en="FAQ">الأسئلة الشائعة</a>
+    </div>
+    <div>
+      <h4 data-ar="عن زهرة" data-en="About Zahra">عن زهرة</h4>
+      <a href="#" data-ar="قصتنا" data-en="Our story">قصتنا</a>
+      <a href="#" data-ar="فروعنا" data-en="Our stores">فروعنا</a>
+      <a href="#" data-ar="سياسة الخصوصية" data-en="Privacy policy">سياسة الخصوصية</a>
+      <a href="#" data-ar="الشروط والأحكام" data-en="Terms of service">الشروط والأحكام</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <small>© 2026 Zahra Perfumes · <span data-ar="مدعوم من Shopify" data-en="Powered by Shopify">مدعوم من Shopify</span></small>
+    <div class="payments">
+      <span>VISA</span><span>Mastercard</span><span>Apple Pay</span><span>tabby</span><span>tamara</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Overlay -->
+<div class="overlay" data-overlay></div>
+
+<!-- Mobile menu -->
+<aside class="drawer drawer--menu" data-drawer="menu" aria-label="Menu">
+  <div class="drawer__head">
+    <a href="#" class="logo"><span class="logo__ar">زهـرة</span><span class="logo__en">Zahra</span></a>
+    <button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav class="drawer__nav">
+    <a href="#bestsellers" data-ar="الأكثر مبيعاً" data-en="Best sellers">الأكثر مبيعاً</a>
+    <a href="#bestsellers" data-ar="عطور نسائية" data-en="Women">عطور نسائية</a>
+    <a href="#bestsellers" data-ar="عطور رجالية" data-en="Men">عطور رجالية</a>
+    <a href="#bundles" data-ar="الباقات" data-en="Bundles">الباقات</a>
+    <a href="#notes" data-ar="النوتات العطرية" data-en="Scent notes">النوتات العطرية</a>
+    <a href="#bundles" class="nav__sale" data-ar="العروض" data-en="Offers">العروض</a>
+  </nav>
+  <button class="btn btn--outline btn--block" data-lang-toggle><span data-ar="English" data-en="العربية">English</span></button>
+</aside>
+
+<!-- Cart drawer -->
+<aside class="drawer drawer--cart" data-drawer="cart" aria-label="Cart">
+  <div class="drawer__head">
+    <h3><span data-ar="سلة التسوق" data-en="Your cart">سلة التسوق</span> (<span data-cart-count>0</span>)</h3>
+    <button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="ship-bar">
+    <p data-ship-text></p>
+    <div class="ship-bar__track"><span data-ship-fill></span></div>
+  </div>
+  <div class="cart-items" data-cart-items></div>
+  <div class="cart-foot">
+    <div class="cart-foot__row"><span data-ar="المجموع الفرعي" data-en="Subtotal">المجموع الفرعي</span><b data-cart-total>0</b></div>
+    <p class="muted" data-ar="شامل الضريبة. يتم احتساب الشحن عند الدفع." data-en="Tax included. Shipping calculated at checkout.">شامل الضريبة. يتم احتساب الشحن عند الدفع.</p>
+    <button class="btn btn--block" data-checkout data-ar="إتمام الطلب" data-en="Check out">إتمام الطلب</button>
+    <div class="cart-foot__pay"><span>Apple Pay</span><span>tabby</span><span>tamara</span></div>
+  </div>
+</aside>
+
+<!-- Search -->
+<div class="search" data-drawer="search">
+  <div class="container search__inner">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input type="search" data-search-input data-ph-ar="ابحث عن عطر، نوتة، أو مجموعة..." data-ph-en="Search perfumes, notes, collections..." placeholder="ابحث عن عطر، نوتة، أو مجموعة...">
+    <button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="container search__results" data-search-results></div>
+</div>
+
+<!-- Quick view -->
+<div class="modal" data-drawer="quick" role="dialog" aria-modal="true">
+  <div class="modal__box" data-quick></div>
+</div>
+
+<div class="toast" data-toast></div>
+
+<script src="bottle.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
